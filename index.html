@@ -38,7 +38,7 @@
             <p>№1</p>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
             <p class="feature-item-image">
-              <img src="img/city.jpg" alt="Картинка городка" width="800" height="256">
+              <a href="#"><img src="img/city.jpg" alt="Картинка городка" width="800" height="256"></a>
             </p>
           </li>
           <li class="feature-item-small">
@@ -58,7 +58,7 @@
             <p>№2</p>
             <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
             <p class="feature-item-image">
-              <img src="img/devil's-bridge.jpg" alt="Мост дьявола" width="800" height="256">
+              <a href="#"><img src="img/devil's-bridge.jpg" alt="Мост дьявола" width="800" height="256"></a>
             </p>
           </li>
           <li class="feature-item-small">
@@ -84,8 +84,33 @@
 
       <!-- Здесь будет форма -->
 
+      <form class="find-hotel" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Поиск гостиницы в Седоне</legend>
+          <p>
+            <label for="check-in-date">Дата заезда</label>
+            <input type="text" name="check-in-date" id="check-in-date" placeholder="24 апреля 2017">
+          </p>
+          <p>
+            <label for="date-of-departure">Дата заезда</label>
+            <input type="text" name="date-of-departure" id="date-of-departure" placeholder="4 июля 2017">
+          </p>
+
+            <label for="aduld-count">Взрослые:</label>
+            1<input type="range" name="aduld" id="aduld-count" min="1" max="10">10
+
+
+            <label for="children-count">Дети:</label>
+            1<input type="range" name="children" id="children-count" min="1" max="10">10
+
+        </fieldset>
+      </form>
+      <button class="button" type="button">Найти</button>
+
       <section class="map">
-        <img src="img/map.jpg" alt="Карта" width="1200" height="475">
+        <a href="#">
+          <img src="img/map.jpg" alt="Карта" width="1200" height="475">
+        </a>
       </section>
     </main>
 
