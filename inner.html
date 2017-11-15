@@ -3,18 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Sedona-inner</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
-      <nav class="site-navigation">
+      <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
           <img src="img/header-logo.png" alt="Логотип" width="138" height="70">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li class="site-navigation-current"><a href="inner.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -23,7 +26,7 @@
 
     <!-- Здесь будет форма -->
 
-    <form class="filters" method="get" action="https://echo.htmlacademy.ru">
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
         <legend>Инфраструктура:</legend>
         <ul>
@@ -68,7 +71,7 @@
         <p>
           <input type="range" name="range">
         </p>
-        <p>
+        <p class="show">
           <button class="button">Показать</button>
         </p>
       </fieldset>
@@ -79,11 +82,11 @@
 
     <section class="serch-results">
       <h2>Найдено: 3</h2>
-      <ul class="serch-list">
+      <ul class="search-list">
         <li>Сортировка:</li>
-        <li class="search-result-current">По цене</li>
-        <li>По типу</li>
-        <li>По рейтингу</li>
+        <li class="search-result-current"><a href="#">По цене</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По рейтингу</a></li>
         <li class="sorting">
           <img src="img/icon-up-dir.svg" alt="increase" width="11" height="10">
           <img src="img/icon-down-dir.svg" alt="decrease" width="11" height="10">
@@ -106,9 +109,10 @@
           <p class="catalog-item-price">
             <span>Гостиница</span>
             <span>от 4000р.</span>
+            <br>
+            <button class="button">Подробнее</button>
+            <button class="button-2">Забронировать</button>
           </p>
-          <button class="button-1">Подробнее</button>
-          <button class="button-2">Забронировать</button>
           <div class="catalog-item-ratio">
             <p>Рейтинг: 8,5</p>
           </div>
@@ -126,9 +130,10 @@
           <p class="catalog-item-price">
             <span>Мотель</span>
             <span>от 3000р.</span>
+            <br>
+            <button class="button">Подробнее</button>
+            <button class="button-2">Забронировать</button>
           </p>
-          <button class="button-1">Подробнее</button>
-          <button class="button-2">Забронировать</button>
           <div class="catalog-item-ratio">
             <p>Рейтинг: 8,9</p>
           </div>
@@ -146,9 +151,10 @@
           <p class="catalog-item-price">
             <span>Апартаменты</span>
             <span>от 2000р.</span>
+            <br>
+            <button class="button">Подробнее</button>
+            <button class="button-2">Забронировать</button>
           </p>
-          <button class="button-1">Подробнее</button>
-          <button class="button-2">Забронировать</button>
           <div class="catalog-item-ratio">
             <p>Рейтинг: 9,2</p>
           </div>
