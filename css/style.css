@@ -103,6 +103,12 @@ a {
   list-style: none;
 }
 
+.features-list li:nth-last-child(1),
+.features-list li:nth-last-child(2),
+.features-list li:nth-last-child(3) {
+  background-color: #eeeeee;
+}
+
 .feature-item-big {
   color: #ffffff;
 
@@ -130,14 +136,6 @@ a {
 
 .feature-item-small p {
   color: #333333;
-}
-
-.feature-group-1 {
-  background-color: #ffffff;
-}
-
-.feature-group-2 {
-  background-color: #eeeeee;
 }
 
 .filter {
