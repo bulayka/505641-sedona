@@ -138,7 +138,7 @@ a {
   color: #333333;
 }
 
-.filter {
+.filters {
   color: #ffffff;
 
   background-color: #6c96be;
@@ -297,8 +297,7 @@ a {
   background-color: #503e33;
 }
 
-.search-form input[type="text"],
-.search-form input[type="password"] {
+.search-form input[type="text"] {
   font: inherit;
   color: #000000;
   font-size: 14px;

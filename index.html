@@ -105,18 +105,23 @@
           <p>
             <label for="check-in-date">Дата заезда:</label>
             <input type="text" name="check-in-date" id="check-in-date" placeholder="24 апреля 2017">
+            <img src="img/calendar.svg" alt="Календарь" width="21" height="22">
           </p>
           <p>
             <label for="date-of-departure">Дата выезда:</label>
             <input type="text" name="date-of-departure" id="date-of-departure" placeholder="4 июля 2017">
+            <img src="img/calendar.svg" alt="Календарь" width="21" height="22">
           </p>
 
             <label for="aduld-count">Взрослые:</label>
-            1<input type="range" name="aduld" id="aduld-count" min="1" max="10">10
-
+            <button type="button">&minus;</button>
+            <input type="text" name="aduld" id="aduld-count" placeholder="2">
+            <button type="button">&plus;</button>
 
             <label for="children-count">Дети:</label>
-            1<input type="range" name="children" id="children-count" min="1" max="10">1
+              <button type="button">&minus;</button>
+              <input type="text" name="children" id="children-count" placeholder="2">
+              <button type="button">&plus;</button>
       </form>
       <button class="button" type="button">Найти</button>
 
