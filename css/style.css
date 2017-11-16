@@ -14,6 +14,11 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .button {
   font: inherit;
 
@@ -56,7 +61,6 @@ a {
 
 .main-navigation {
   font-size: 14px;
-  line-height: 26px;
   color: #000000;
 
   background-color: #ffffff;
@@ -92,6 +96,7 @@ a {
 
 .main-title h2 {
   font-size: 21px;
+  font-weight: bold;
 }
 
 .main-title p {
@@ -101,6 +106,8 @@ a {
 
 .features-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .features-list li:nth-last-child(1),
@@ -123,6 +130,7 @@ a {
 .feature-item-big h3,
 .feature-item-small h3 {
   font-size: 21px;
+  font-weight: bold;
 }
 
 .feature-item-big p,
@@ -141,10 +149,12 @@ a {
 .filters {
   color: #ffffff;
 
-  background-color: #6c96be;
-  background-image: url("img/filter-bg.jpg");
+  /*background-color: #6c96be;*/
+  background: #6c96be url("img/bg.jpg") 0 0 no-repeat;
+  /*background-image: url("img/bg.jpg");
   background-position: 0 0;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
+  outline: 1px solid red;
 }
 
 .filter fieldset {
@@ -174,7 +184,6 @@ a {
 
 .search-rezults h2 {
   font-size: 21px;
-  line-height: 26px;
 }
 
 .search-list {
@@ -211,7 +220,6 @@ a {
 .catalog-list h3 {
   color: #000000;
   font-size: 21px;
-  line-height: 26px;
 }
 
 .catalog-list h3:hover {
@@ -273,6 +281,7 @@ a {
   color: #000000;
   font-size: 30px;
   line-height: 36px;
+  font-weight: bold;
 }
 
 .search-form-title p {
@@ -284,7 +293,8 @@ a {
 .search-form-title a {
   color: #ffffff;
   font-size: 21px;
-  line-height: 26px;
+  font-weight: bold;
+
   background-color: #766357;
 }
 
@@ -301,7 +311,6 @@ a {
   font: inherit;
   color: #000000;
   font-size: 14px;
-  line-height: 26px;
   background-color: #f2f2f2;
   text-transform: uppercase;
 }
