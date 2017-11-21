@@ -87,7 +87,12 @@ a {
 }
 
 .intro {
-  margin: 0 auto;
+  width: 1200px;
+  height: 733px;
+  background-color: #ffffff;
+  background-image: url("../img/bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .main-title {
@@ -116,11 +121,7 @@ a {
   background-color: #eeeeee;
 }
 
-.feature-item-big {
-  color: #ffffff;
 
-  background-color: #81b3d2;
-}
 
 .feature-item-big,
 .feature-item-small {
@@ -146,15 +147,21 @@ a {
   color: #333333;
 }
 
+.features .features-list li:nth-child(1),
+.features .features-list li:nth-child(7) {
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
 .filters {
   color: #ffffff;
 
-  /*background-color: #6c96be;*/
-  background: #6c96be url("img/bg.jpg") 0 0 no-repeat;
-  /*background-image: url("img/bg.jpg");
+  background-color: #6c96be;
+  background-image: url("../img/filter-bg.jpg");
   background-position: 0 0;
-  background-repeat: no-repeat;*/
-  outline: 1px solid red;
+  background-repeat: no-repeat;
+
 }
 
 .filter fieldset {
@@ -215,6 +222,7 @@ a {
   font-size: 14px;
   line-height: 21px;
   list-style: none;
+  padding: 0;
 }
 
 .catalog-list h3 {
@@ -248,7 +256,7 @@ a {
   text-align: center;
 
   background-color: #ffffff;
-  background-image: url("img/footer-bg.png");
+  background-image: url("../img/footer-bg.png");
   background-position: 0 0;
   background-repeat: repeat;
 }
@@ -266,17 +274,32 @@ a {
   color: #000000;
 }
 
-.footer-copyright a:hover {
-  color: #85b6d4;
+.social-button:hover {
+  background-color: #669ec0;
 }
 
-.footer-copyright a:active {
-  color: #bdbbbc;
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.footer-copyright svg {
+  display: inline-block;
+  width: 115px;
+  height: 41px;
+}
+
+.footer-copyright a:hover svg {
+  fill: #85b6d4;
+}
+
+.footer-copyright svg:active {
+  fill: #bdbbbc;
 }
 
 .search-form-title {
   text-align: center;
 }
+
 .search-form-title h2 {
   color: #000000;
   font-size: 30px;
@@ -322,4 +345,177 @@ a {
 .search-form input:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
+}
+
+/* ----- Сеточные стили ----- */
+
+
+html,
+body {
+  min-width: 1200px;
+  min-height: 1750px;
+}
+
+.main-header {
+  margin-bottom: -15px;
+  /* Временно для сетки */
+  min-height: 60px;
+}
+
+.main-header-logo {
+  width: 138px;
+  height: 70px;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  min-height: 60px;
+}
+
+.features {
+  margin-bottom: 55px;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.feature-item-big {
+  width: 800px;
+  height: 256px;
+}
+
+.feature-item-small {
+  width: 400px;
+  height: 256px;
+  /*padding: 50px 0;*/
+}
+
+.features-list li:nth-child(3),
+.features-list li:nth-child(4),
+.features-list li:nth-child(5) {
+  padding: 60px 0;
+}
+
+.search-results .container {
+  display: flex;
+  flex-direction: row;
+
+  padding: 30px 70px;
+}
+
+.search-list {
+  width: 900px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.search-list li:last-child {
+  margin-left: 480px;;
+}
+
+.find {
+  margin-right: 48px;
+}
+
+.catalog {
+  width: 1200px;
+  padding: 0 70px;
+  box-sizing: border-box;
+
+  /* Временно для сетки */
+  min-height: 455px;
+}
+
+.catalog-item-ratio {
+  margin-left: auto;
+}
+
+.catalog-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.catalog-item .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.catalog-item-image {
+  margin-right: 30px;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 1200px;
+  height: 217px;
+}
+
+.filter-list {
+  padding: 0;
+  margin: 0;
+  /*padding: 30px 100px 70px 30px;*/
+  list-style: none;
+}
+
+.filter-column-1 {
+  width: 240px;
+  padding-left: 70px;
+  /*padding-right: : 0px;*/
+}
+
+.filter-column-2 {
+  width: 290px;
+
+  /*padding-right: : 0px;*/
+}
+
+.price-by-day {
+  margin-left: auto;
+  margin-right: 70px;
+}
+
+.main-footer {
+   margin-top: 35px;
+   padding: 35px;
+}
+
+.main-footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-hashtag {
+  width: 400px;
+  margin: 0;
+}
+
+.footer-social {
+  width: 400px;
+}
+
+.footer-copyright {
+  width: 400px;
+  margin: 0;
 }
