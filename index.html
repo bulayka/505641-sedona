@@ -102,27 +102,31 @@
 
       <div class="search-form-title">
         <h2>Заинтересовались?</h2>
+
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем Вас лучшие предложения гостиниц в Седоне</p>
-        <a href="#">Поиск гостиницы в Седоне</a>
+
+        <p class="form-title">
+          <a href="#">Поиск гостиницы в Седоне</a>
+        </p>
       </div>
       <!-- Здесь будет форма -->
 
       <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
-          <p>
+          <p class="date">
             <label for="check-in-date">Дата заезда:</label>
             <input type="text" name="check-in-date" id="check-in-date" placeholder="24 апреля 2017">
             <button type="button">
               <img src="img/calendar.svg" alt="Календарь" width="21" height="22">
             </button>
           </p>
-          <p>
+          <p class="date">
             <label for="date-of-departure">Дата выезда:</label>
             <input type="text" name="date-of-departure" id="date-of-departure" placeholder="4 июля 2017">
             <button type="button">
               <img src="img/calendar.svg" alt="Календарь" width="21" height="22">
             </button>
           </p>
-
+          <p class="count">
             <label for="aduld-count">Взрослые:</label>
             <button type="button">&minus;</button>
             <input type="text" name="aduld" id="aduld-count" placeholder="2">
@@ -132,8 +136,12 @@
               <button type="button">&minus;</button>
               <input type="text" name="children" id="children-count" placeholder="2">
               <button type="button">&plus;</button>
+          </p>
+          <p>
+            <button class="button" type="button">Найти</button>
+          </p>
       </form>
-      <button class="button" type="button">Найти</button>
+
 
       <div class="map">
         <a href="#">

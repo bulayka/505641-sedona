@@ -19,6 +19,10 @@ a {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  display: none;
+}
+
 .button {
   font: inherit;
 
@@ -119,6 +123,9 @@ a {
 .features-list li:nth-last-child(2),
 .features-list li:nth-last-child(3) {
   background-color: #eeeeee;
+  padding: 50px 44px 40px 42px;
+  width: 314px;
+  height: 166px;
 }
 
 
@@ -154,6 +161,30 @@ a {
   background-color: #81b3d2;
 }
 
+
+.search-form {
+  position: absolute;
+  z-index: 1;
+  left: 600px;
+
+
+  background-color: #ffffff;
+}
+
+.date input[type="text"] {
+  width: 346px;
+  height: 38px;
+}
+
+.count input[type="text"] {
+  width: 114px;
+  height: 38px;
+}
+
+.map {
+  position: relative;
+}
+
 .filters {
   color: #ffffff;
 
@@ -179,6 +210,11 @@ a {
 }
 
 .show .button {
+  position: absolute;
+  width: 133px;
+  height: 32px;
+  top: 200px;
+  right: 450px;
   background-color: transparent;
   border: 2px solid white;
   border-radius: 1px;
@@ -261,7 +297,7 @@ a {
   background-repeat: repeat;
 }
 
-.footer-# {
+.footer-hashtag {
   color: #000000;
   font-size: 21px;
 }
@@ -353,7 +389,6 @@ a {
 html,
 body {
   min-width: 1200px;
-  min-height: 1750px;
 }
 
 .main-header {
@@ -405,7 +440,8 @@ body {
 .features-list li:nth-child(3),
 .features-list li:nth-child(4),
 .features-list li:nth-child(5) {
-  padding: 60px 0;
+  min-height: 270px;
+  padding-top: 60px;
 }
 
 .search-results .container {
@@ -518,4 +554,50 @@ body {
 .footer-copyright {
   width: 400px;
   margin: 0;
+}
+
+
+
+
+.range-controls{
+    position:relative;
+    height:100px;
+    margin-bottom:20px;
+    /*padding:0 30px;*/
+    /*border-radius:5px;*/
+    overflow:hidden;
+}
+
+.bar, .scale{
+    margin-top:25px;
+    height:2px;
+    background:white;
+
+}
+.bar{
+    margin-left:0px;
+    width:232px;
+    opacity: 0.3;
+}
+.toggle{
+    position:absolute;
+    top:50px;
+    left:30px;
+}
+.min-toggle{
+    left:0px;
+}
+.max-toggle{
+    left:232px;
+}
+input{
+    width:160px;
+    padding:8px 10px;
+    text-align:center;
+    background: transparent;
+    border:1px solid white;
+    color:white;
+}
+.min-price{
+    margin-right:14px;
 }
