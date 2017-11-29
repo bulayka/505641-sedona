@@ -1,8 +1,8 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
-  /*width: 1280px;*/
+  width: 1280px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -11,7 +11,7 @@ body {
   color: #000000;
   text-transform: uppercase;
 
-  /*background-color: #f2f2f2;*/
+  background-color: #f2f2f2;
 }
 
 a {
@@ -26,11 +26,8 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
-
-/*.wrapper {
-  box-shadow: 0 0 40px 2px #dbdbdb;
-}*/
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -52,12 +49,10 @@ input[type="radio"].visually-hidden {
 
 .button {
   font: inherit;
-
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
-
   background-color: #81b3d2;
   border: none;
 }
@@ -113,7 +108,6 @@ input[type="radio"].visually-hidden {
 .main-navigation {
   font-size: 14px;
   color: #000000;
-
   background-color: #ffffff;
 }
 
@@ -125,7 +119,6 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   margin: 0;
   padding: 0;
-
   list-style: none;
   min-height: 56px;
 }
@@ -194,7 +187,7 @@ input[type="radio"].visually-hidden {
 }
 
 .features {
-  margin-bottom: 55px;
+  background-color: #ffffff;
 }
 
 .features-list {
@@ -203,7 +196,6 @@ input[type="radio"].visually-hidden {
   align-content: center;
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -221,6 +213,7 @@ input[type="radio"].visually-hidden {
 .features-list li:nth-last-child(3) h3 {
   width: 116px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .feature-item-big,
@@ -292,7 +285,10 @@ input[type="radio"].visually-hidden {
 .ownlife,
 .town h3,
 .bridge h3,
-.you-can-go {
+.you-can-go,
+.attractions,
+.not-boring,
+.canyon {
   margin: 0 auto;
 }
 
@@ -317,6 +313,21 @@ input[type="radio"].visually-hidden {
 
 .souvenirs p {
   width: 277px;
+}
+
+.attractions {
+  width: 210px;
+  margin-top: 20px;
+}
+
+.not-boring {
+  width: 264px;
+  margin-top: 20px;
+}
+
+.canyon {
+  width: 260px;
+  margin-top: 20px;
 }
 
 .feature-item-small .souvenirs {
@@ -360,7 +371,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   width: 1200px;
   height: 217px;
 }
@@ -368,7 +378,6 @@ input[type="radio"].visually-hidden {
 .filter-list {
   padding: 0;
   margin: 0;
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -404,9 +413,7 @@ input[type="radio"].visually-hidden {
 
 .filter-checkbox {
   position: relative;
-
   padding-left: 36px;
-
   cursor: pointer;
 }
 
@@ -414,10 +421,8 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 0;
   left: 0;
-
   width: 26px;
   height: 26px;
-
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -426,14 +431,11 @@ input[type="radio"].visually-hidden {
 .filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
 .filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
   content: "";
-
   position: absolute;
   top: 0;
   left: 0;
-
   width: 26px;
   height: 26px;
-
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -451,14 +453,12 @@ input[type="radio"].visually-hidden {
 .filter-range {
   width: 330px;
   margin: auto;
-
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .filter-range-title {
   margin-bottom: 9px;
-
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -466,12 +466,9 @@ input[type="radio"].visually-hidden {
 
 .price-controls {
   position: relative;
-
   height: 36px;
   margin-bottom: 20px;
-
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -481,21 +478,17 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 2px;
   height: 22px;
-
   background: #ffffff;
   transform: translate(-50%, -50%);
 }
 
 .price-controls label {
   display: inline-block;
-
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
-
   cursor: pointer;
 }
 
@@ -508,10 +501,8 @@ input[type="radio"].visually-hidden {
 .price-controls input {
   width: 50px;
   margin: 0;
-
   color: inherit;
   font: inherit;
-
   background: none;
   border: none;
 }
@@ -538,10 +529,8 @@ input[type="radio"].visually-hidden {
 .range-toggle {
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -565,12 +554,10 @@ input[type="radio"].visually-hidden {
   display: block;
   margin: 0 auto;
   padding: 6px 35px;
-
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -582,10 +569,15 @@ input[type="radio"].visually-hidden {
   background: #ffffff;
 }
 
+.search-results {
+  background-color: #ffffff;
+}
+
 .search-results .container {
+  width: 1060px;
   display: flex;
   flex-direction: row;
-  padding: 13px 70px 0px;
+  padding: 13px 70px;
 }
 
 .search-list {
@@ -596,7 +588,6 @@ input[type="radio"].visually-hidden {
   align-items: center;
   padding: 0;
   margin: 0;
-
   font-size: 12px;
   line-height: 18px;
   list-style: none;
@@ -607,6 +598,7 @@ input[type="radio"].visually-hidden {
 }
 
 .find {
+  width: 120px;
   margin-right: 48px;
 }
 
@@ -657,16 +649,13 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   padding: 0;
   box-sizing: border-box;
-
-  /* Временно для сетки */
-  min-height: 455px;
+  background-color: #ffffff;
 }
 
 .catalog-item {
   display: flex;
   flex-direction: row;
   align-items: center;
-
   border-top: 1px solid #e5e5e5;
   padding: 30px 70px;
   height: 90px;
@@ -681,9 +670,7 @@ input[type="radio"].visually-hidden {
   margin-top: -10px;
   display: flex;
   flex-direction: column;
-  /*align-content: center;*/
   height: 90px;
-  /*box-sizing: border-box;*/
 }
 .catalog-item-image {
   margin: 0;
@@ -699,6 +686,7 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .catalog-list h3 {
@@ -722,7 +710,6 @@ input[type="radio"].visually-hidden {
   align-content: space-between;
   width: 260px;
   height: 80px;
-
   margin: 0;
   color: #333333;
 }
@@ -766,17 +753,24 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer {
-  padding: 30px 0;
-
+  position: relative;
+  padding: 36px 0;
+  margin-top: -120px;
   color: #000000;
   text-align: center;
   background-color: #ffffff;
   background-image: url("../img/footer-bg.png");
   background-position: 0 0;
   background-repeat: repeat;
+  opacity: 0.9;
 }
 
-.main-footer .container {
+.inner-page .main-footer {
+  margin-top: 0;
+  opacity: 1;
+}
+
+.main-footer .footer-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -870,9 +864,12 @@ input[type="radio"].visually-hidden {
 
 .search-form-title {
   text-align: center;
+  background-color: #ffffff;
 }
 
 .search-form-title h2 {
+  margin: 0;
+  padding-top: 55px;
   color: #000000;
   font-size: 30px;
   line-height: 36px;
@@ -896,6 +893,7 @@ input[type="radio"].visually-hidden {
   font: inherit;
   color: #000000;
   font-size: 14px;
+  border: none;
   background-color: #f2f2f2;
   text-transform: uppercase;
 }
@@ -927,9 +925,7 @@ input[type="radio"].visually-hidden {
 .minus-button, .plus-button {
   position: absolute;
   top: 50%;
-
   z-index: 2;
-
   font-size: 0;
   width: 10px;
   height: 3px;
@@ -947,13 +943,11 @@ input[type="radio"].visually-hidden {
 
 .plus-button::after {
   content: "";
-
   position: absolute;
   top: 0px;
   left: 1px;
   width: 10px;
   height: 3px;
-
   background-color: #a9a9a9;
 }
 
