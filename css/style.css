@@ -112,14 +112,31 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   list-style: none;
 }
 
+.site-navigation li {
+  width: 240px;
+  margin: auto;
+  text-align: center;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 240px;
+  padding-left: 20px;
+}
+
+.site-navigation li:nth-child(3) {
+  padding-left: 20px;
+}
+
+.site-navigation li:nth-child(4) {
+  padding-left: 15px;
+}
+
 .site-navigation a {
-  display: block;
-  padding-top: 15px;
   color: #000000;
 }
 
@@ -145,7 +162,7 @@ input[type="radio"].visually-hidden {
 
 .main-header-logo {
   position: absolute;
-  top: -15px;
+  top: 0px;
   left: 50%;
   z-index: 1;
   width: 138px;
