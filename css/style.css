@@ -869,15 +869,61 @@ input[type="radio"].visually-hidden {
   fill: #bdbbbc;
 }
 
+.map iframe {
+  position: absolute;
+}
+
+@keyframes form-animation {
+  0% {
+    transform: translateX(316px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .search-form {
   position: absolute;
   left: 50%;
   z-index: 1;
+  display: none;
   width: 458px;
   padding: 55px;
   margin-left: -284px;
   background-color: #ffffff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.search-form-show {
+  display: block;
+  animation: form-animation 0.1s;
+}
+
+.search-form-error {
+  animation: shake 0.5s;
 }
 
 .search-form .date {
